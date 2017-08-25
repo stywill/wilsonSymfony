@@ -26,20 +26,13 @@ class Chamados
      *
      * @ORM\Column(name="cliente_id", type="integer")
      */
-    /**
-     * @ORM\ManyToMany(targetEntity="Clientes", mappedBy="id")
-     * @ORM\JoinColumn(name="cliente_id", referencedColumnName="id")
-     */
+
     private $clienteId;
 
     /**
      * @var int
      *
      * @ORM\Column(name="pedido_id", type="integer")
-     */
-    /**
-     * @ORM\ManyToMany(targetEntity="Pedidos", mappedBy="id")
-     * @ORM\JoinColumn(name="pedido_id", referencedColumnName="id")
      */
     private $pedidoId;
 

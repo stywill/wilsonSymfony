@@ -27,15 +27,15 @@ class ChamadoController extends Controller
 
             if(isset($pedido)) {//verifica o numero do pedido
                 $cliente = $this->getDoctrine()->getRepository("AppBundle:Clientes")->findOneBy(array('nome' => $chamado->getNome()));
-                //$pedidoId = $pedido->getId();
-                //$chamado->setClienteId($cliente->getId());
-                //$chamado->setPedidoId($pedidoId);
+                $chamado->setClienteId($cliente->getId());
+                $chamado->setPedidoId($pedido->getId());
 
                 $chamado->setCreatedAt(new \DateTime("now", new \DateTimeZone("America/Sao_Paulo")));
                 $chamado->setUpdatedAt(new \DateTime("now", new \DateTimeZone("America/Sao_Paulo")));
-                //if(!isset($cliente->getEmail())){//grava o e-mail do para o cliente caso não tenha
-                ClienteController::indexAction($cliente->getId(),$chamado->getEmail());
-                //}
+
+                if(empty($cliente->getEmail())===true){//grava o e-mail do para o cliente caso não tenha
+                   ClienteController::indexAction($cliente->getId(),$chamado->getEmail());
+                }
 
                 $doctrine = $this->getDoctrine()->getEntityManager();
                 $doctrine->persist($chamado);
