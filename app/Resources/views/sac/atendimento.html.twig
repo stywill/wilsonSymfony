@@ -1,5 +1,11 @@
 {% extends 'corpo.html.twig' %}
 {% block body %}
+<div class="container">
+    <div class="col-lg-2">
+        <div class="form-group">
+        {% include 'includes/busca.html.twig' %}
+        </div>
+    </div>
     <div class="col-md-12">
         <table class="table">
             <tr>
@@ -14,8 +20,8 @@
                     <td>{{ c.getObservacao() }}</td>
                 </tr>
             {% endfor %}
-
         </table>
     </div>
+</div>
 {% endblock %}
 

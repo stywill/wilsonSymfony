@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Form\BuscaType;
 use AppBundle\Form\ChamadoType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
@@ -56,8 +57,13 @@ class ChamadoController extends Controller
     /**
      * @Route("/lista", name="lista")
      */
-    public function atendimentoAction(){
+    public function atendimentoAction(Request $request){
+        $form = $this->createForm(BuscaType::class);
+        $form->handleRequest($request);
+        if ($form->isValid() && $form->isSubmitted()){
+
+        }
         $chamados = $this->getDoctrine()->getRepository("AppBundle:Chamados")->findAll();
-        return $this->render('sac/atendimento.html.twig',['chamados'=>$chamados]);
+        return $this->render('sac/atendimento.html.twig',['form' => $form->createView(),'chamados'=>$chamados]);
     }
 }
