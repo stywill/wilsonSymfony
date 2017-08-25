@@ -1,0 +1,17 @@
+{% extends 'corpo.html.twig' %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="col-md-12">
+            {% include 'includes/messages.html.twig' %}
+        </div>
+        <div class="col-md-12">
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <button type="submit" class="btn btn-primary">Salvar</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+
+{%endblock%}
