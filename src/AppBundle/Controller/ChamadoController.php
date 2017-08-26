@@ -2,12 +2,14 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Chamados;
 use AppBundle\Form\BuscaType;
 use AppBundle\Form\ChamadoType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use AppBundle\Controller\ClienteController;
+use Doctrine\ORM\Tools\Pagination\Paginator;
 /**
  * @Route("/chamado")
  * @package AppBundle\Controller
@@ -61,9 +63,26 @@ class ChamadoController extends Controller
         $form = $this->createForm(BuscaType::class);
         $form->handleRequest($request);
         if ($form->isValid() && $form->isSubmitted()){
+            $busca = $form->getData();
+
+            $repository = $this->getDoctrine()->getRepository(Chamados::class);
+
+            //$query = $repository->createQueryBuilder('b')->where('b.numero=:numero')
+            //    ->setParameter('numero', $busca->getNumero())->getQuery();
+
+            $query = $repository->createQueryBuilder('b')
+                ->andWhere('b.numero LIKE :numero')
+                ->andWhere('b.email LIKE :email')
+                ->setParameter('numero', '%'.$busca->getNumero().'%')
+                ->setParameter('email', '%'.$busca->getEmail().'%')
+                ->getQuery();
+
+            $chamados = $query->getResult();
+        }else{
+            $chamados = $this->getDoctrine()->getRepository("AppBundle:Chamados")->findAll();
 
         }
-        $chamados = $this->getDoctrine()->getRepository("AppBundle:Chamados")->findAll();
         return $this->render('sac/atendimento.html.twig',['form' => $form->createView(),'chamados'=>$chamados]);
     }
+
 }
