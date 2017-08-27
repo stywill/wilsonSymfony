@@ -19,7 +19,7 @@ class ChamadoType extends AbstractType
             ->add('numero')
             ->add('email')
             ->add('titulo')
-            ->add('observacao',TextareaType::class);
+            ->add('observacao',TextareaType::class,array('required'=>false));
     }
 
     public function configureOptions(OptionsResolver $resolver)

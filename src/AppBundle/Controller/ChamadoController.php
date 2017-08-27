@@ -39,12 +39,10 @@ class ChamadoController extends Controller
                 if(empty($cliente->getEmail())===true){//grava o e-mail do para o cliente caso não tenha
                    ClienteController::indexAction($cliente->getId(),$chamado->getEmail());
                 }
-
                 $doctrine = $this->getDoctrine()->getEntityManager();
                 $doctrine->persist($chamado);
 
                 $doctrine->flush();
-
 
                 $this->addFlash("success","Chamado gravado com sucesso");
                 $this->redirect('/');
@@ -52,7 +50,6 @@ class ChamadoController extends Controller
                 $this->addFlash("error","Número do Pedido Não encotrado");
             }
         }
-
         return $this->render('sac/chamado.html.twig',['form' => $form->createView()]);
     }
 
@@ -60,6 +57,7 @@ class ChamadoController extends Controller
      * @Route("/lista", name="lista")
      */
     public function atendimentoAction(Request $request){
+        /*Busca da pagina de atendimentos*/
         $form = $this->createForm(BuscaType::class);
         $form->handleRequest($request);
         if ($form->isValid() && $form->isSubmitted()){
@@ -67,29 +65,24 @@ class ChamadoController extends Controller
 
             $repository = $this->getDoctrine()->getRepository(Chamados::class);
 
-            //$query = $repository->createQueryBuilder('b')->where('b.numero=:numero')
-            //    ->setParameter('numero', $busca->getNumero())->getQuery();
-
             $query = $repository->createQueryBuilder('b')
                 ->andWhere('b.numero LIKE :numero')
                 ->andWhere('b.email LIKE :email')
                 ->setParameter('numero', '%'.$busca->getNumero().'%')
                 ->setParameter('email', '%'.$busca->getEmail().'%')
                 ->getQuery();
-
-            //$chamados = $query->getResult();
         }else{
             $query = $this->getDoctrine()->getRepository("AppBundle:Chamados")->findAll();
         }
+        /*************************************************************************/
         /*paginação*/
         $paginator  = $this->get('knp_paginator');
 
         $chamados = $paginator->paginate(
-            $query, /* query NOT result */
+            $query,
             $request->query->getInt('page', 1)/*numero da pagina*/,
             $request->query->getInt('limit', 5)/*limite por pagina*/
         );
         return $this->render('sac/atendimento.html.twig',['form' => $form->createView(),'chamados'=>$chamados]);
     }
-
 }
