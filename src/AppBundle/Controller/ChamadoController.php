@@ -77,11 +77,18 @@ class ChamadoController extends Controller
                 ->setParameter('email', '%'.$busca->getEmail().'%')
                 ->getQuery();
 
-            $chamados = $query->getResult();
+            //$chamados = $query->getResult();
         }else{
-            $chamados = $this->getDoctrine()->getRepository("AppBundle:Chamados")->findAll();
-
+            $query = $this->getDoctrine()->getRepository("AppBundle:Chamados")->findAll();
         }
+        /*paginação*/
+        $paginator  = $this->get('knp_paginator');
+
+        $chamados = $paginator->paginate(
+            $query, /* query NOT result */
+            $request->query->getInt('page', 1)/*numero da pagina*/,
+            $request->query->getInt('limit', 5)/*limite por pagina*/
+        );
         return $this->render('sac/atendimento.html.twig',['form' => $form->createView(),'chamados'=>$chamados]);
     }
 
