@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67254900-40e8-4789-a130-46dbdefc5b3e" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wilson.iml" afterPath="$PROJECT_DIR$/.idea/wilson.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -22,6 +23,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/BuscaType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/BuscaType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/ChamadoType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/ChamadoType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/build/css/admin.css" afterPath="$PROJECT_DIR$/web/build/css/admin.css" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Wilson.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base.sql" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ChamadoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ChamadoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/ChamadoType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/ChamadoType.php" />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,8 +47,13 @@
       <file leaf-file-name="atendimento.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/sac/atendimento.html.twig">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="459">
               <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+=======
+            <state relative-caret-position="476">
+              <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="49" />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
               <folding />
             </state>
           </provider>
@@ -65,6 +79,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ChamadoController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ChamadoController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -72,6 +87,20 @@
               <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding>
                 <marker date="1503834762000" expanded="false" signature="44:54" ph="..." />
+=======
+      <file leaf-file-name="ChamadoController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ChamadoController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="583">
+              <caret line="73" column="14" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+              <folding>
+                <element signature="e#40#70#0#PHP" expanded="true" />
+                <element signature="e#851#870#1#PHP" expanded="true" />
+                <element signature="e#1052#1072#1#PHP" expanded="true" />
+                <element signature="e#2073#2096#0#PHP" expanded="true" />
+                <element signature="e#2962#2982#1#PHP" expanded="true" />
+                <element signature="e#3403#3430#0#PHP" expanded="true" />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
               </folding>
             </state>
           </provider>
@@ -80,6 +109,7 @@
       <file leaf-file-name="ChamadoType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/ChamadoType.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="255">
               <caret line="21" column="77" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="77" />
               <folding>
@@ -89,6 +119,11 @@
                 <marker date="1503834762000" expanded="true" signature="769:822" ph="..." />
                 <marker date="1503834762000" expanded="true" signature="770:821" ph="..." />
               </folding>
+=======
+            <state relative-caret-position="226">
+              <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="75" />
+              <folding />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
             </state>
           </provider>
         </entry>
@@ -98,6 +133,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+<<<<<<< HEAD
               <folding>
                 <marker date="1503834762000" expanded="true" signature="247:732" ph="{...}" />
                 <marker date="1503834762000" expanded="true" signature="326:476" ph="{...}" />
@@ -107,10 +143,14 @@
                 <marker date="1503834762000" expanded="true" signature="580:631" ph="..." />
                 <marker date="1503834762000" expanded="true" signature="678:730" ph="{...}" />
               </folding>
+=======
+              <folding />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -119,6 +159,14 @@
               <folding>
                 <marker date="1505404421157" expanded="true" signature="1281:1285" ph="pdo_mysql" />
               </folding>
+=======
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="44" column="25" lean-forward="false" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+              <folding />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
             </state>
           </provider>
         </entry>
@@ -236,7 +284,11 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
     </include_path>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -302,6 +354,11 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -358,18 +415,29 @@
       <workItem from="1503784694754" duration="1225000" />
       <workItem from="1503834492196" duration="3504000" />
       <workItem from="1503843358957" duration="1204000" />
+<<<<<<< HEAD
       <workItem from="1505404371998" duration="46000" />
+=======
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="54958000" />
+=======
+    <option name="totallyTimeSpent" value="54912000" />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16251831" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20919175" sideWeight="0.50208336" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -412,7 +480,16 @@
         <state relative-caret-position="1122">
           <caret line="66" column="109" lean-forward="false" selection-start-line="66" selection-start-column="109" selection-end-line="66" selection-end-column="109" />
           <folding>
+<<<<<<< HEAD
             <marker date="1503834762000" expanded="false" signature="44:54" ph="..." />
+=======
+            <element signature="e#40#70#0#PHP" expanded="true" />
+            <element signature="e#851#870#1#PHP" expanded="true" />
+            <element signature="e#1052#1072#1#PHP" expanded="true" />
+            <element signature="e#2073#2096#0#PHP" expanded="true" />
+            <element signature="e#2962#2982#1#PHP" expanded="true" />
+            <element signature="e#3403#3430#0#PHP" expanded="true" />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
           </folding>
         </state>
       </provider>
@@ -542,7 +619,16 @@
         <state relative-caret-position="493">
           <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding>
+<<<<<<< HEAD
             <marker date="1503834762000" expanded="false" signature="44:54" ph="..." />
+=======
+            <element signature="e#40#70#0#PHP" expanded="true" />
+            <element signature="e#851#870#1#PHP" expanded="true" />
+            <element signature="e#1052#1072#1#PHP" expanded="true" />
+            <element signature="e#2073#2096#0#PHP" expanded="true" />
+            <element signature="e#2962#2982#1#PHP" expanded="true" />
+            <element signature="e#3403#3430#0#PHP" expanded="true" />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
           </folding>
         </state>
       </provider>
@@ -658,6 +744,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4845">
           <caret line="285" column="32" lean-forward="false" selection-start-line="285" selection-start-column="20" selection-end-line="285" selection-end-column="32" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
         </state>
       </provider>
     </entry>
@@ -671,6 +761,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/sac/atendimento.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="459">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
@@ -768,15 +859,110 @@
           <folding>
             <marker date="1503834762000" expanded="false" signature="44:54" ph="..." />
           </folding>
+=======
+        <state relative-caret-position="476">
+          <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle/Definition/PaginatorAware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle/DependencyInjection/KnpPaginatorExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle/DependencyInjection/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-335">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle/Definition/PaginatorAwareInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle/DependencyInjection/Compiler/PaginatorAwarePass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle/Pagination/SlidingPagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="476">
           <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
           <folding>
             <marker date="1505404421157" expanded="true" signature="1281:1285" ph="pdo_mysql" />
+=======
+        <state relative-caret-position="204">
+          <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="44" column="25" lean-forward="false" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle/Templating/PaginationHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/ChamadoType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ChamadoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="73" column="14" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+          <folding>
+            <element signature="e#40#70#0#PHP" expanded="true" />
+            <element signature="e#851#870#1#PHP" expanded="true" />
+            <element signature="e#1052#1072#1#PHP" expanded="true" />
+            <element signature="e#2073#2096#0#PHP" expanded="true" />
+            <element signature="e#2962#2982#1#PHP" expanded="true" />
+            <element signature="e#3403#3430#0#PHP" expanded="true" />
+>>>>>>> 00157561a08db70c11b407da4b6187d6a390b59b
           </folding>
         </state>
       </provider>

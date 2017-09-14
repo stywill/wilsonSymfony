@@ -29,9 +29,9 @@ CREATE TABLE IF NOT EXISTS `chamados` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Copiando dados para a tabela teste_wilson.chamados: ~9 rows (aproximadamente)
+-- Copiando dados para a tabela teste_wilson.chamados: ~12 rows (aproximadamente)
 DELETE FROM `chamados`;
 /*!40000 ALTER TABLE `chamados` DISABLE KEYS */;
 INSERT INTO `chamados` (`id`, `cliente_id`, `pedido_id`, `nome`, `numero`, `email`, `titulo`, `observacao`, `created_at`, `updated_at`) VALUES
@@ -45,7 +45,8 @@ INSERT INTO `chamados` (`id`, `cliente_id`, `pedido_id`, `nome`, `numero`, `emai
 	(8, NULL, NULL, 'Miguel', 104, 'email@email.com', 'teste', 'fff', '2017-08-25 14:12:27', '2017-08-25 14:12:27'),
 	(9, NULL, NULL, 'Isabel', 106, 'email2@email.com', 'teste', 'fdsds', '2017-08-25 14:14:20', '2017-08-25 14:14:20'),
 	(10, 8, NULL, 'Isabel', 106, 'teste@email.com', 'dasda', 'dasdsad', '2017-08-25 14:20:37', '2017-08-25 14:20:37'),
-	(11, 8, 7, 'Isabel', 106, 'teste@email.com', 'teste', 'fsdfsdf', '2017-08-25 14:22:54', '2017-08-25 14:22:54');
+	(11, 8, 7, 'Isabel', 106, 'teste@email.com', 'teste', 'fsdfsdf', '2017-08-25 14:22:54', '2017-08-25 14:22:54'),
+	(12, 8, 7, 'Isabel', 106, 'stywill@gmail.com', 'teste', 'gfgsdf', '2017-08-25 17:50:22', '2017-08-25 17:50:22');
 /*!40000 ALTER TABLE `chamados` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela teste_wilson.clientes
@@ -58,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Copiando dados para a tabela teste_wilson.clientes: ~10 rows (aproximadamente)
+-- Copiando dados para a tabela teste_wilson.clientes: ~9 rows (aproximadamente)
 DELETE FROM `clientes`;
 /*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
 INSERT INTO `clientes` (`id`, `nome`, `email`, `created_at`, `updated_at`) VALUES
@@ -84,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `pedidos` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Copiando dados para a tabela teste_wilson.pedidos: ~10 rows (aproximadamente)
+-- Copiando dados para a tabela teste_wilson.pedidos: ~8 rows (aproximadamente)
 DELETE FROM `pedidos`;
 /*!40000 ALTER TABLE `pedidos` DISABLE KEYS */;
 INSERT INTO `pedidos` (`id`, `cliente_id`, `numero`, `created_at`, `updated_at`) VALUES
