@@ -12,8 +12,8 @@ class BuscaType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('numero')
-            ->add('email');
+            ->add('numero',null, array('required' => false))
+            ->add('email',null, array('required' =>false));
     }
 
     public function configureOptions(OptionsResolver $resolver)

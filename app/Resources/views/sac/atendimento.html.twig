@@ -9,19 +9,27 @@
     <div class="col-md-12">
         <table class="table">
             <tr>
+                <th>Pedido Número</th>
+                <th>Nome</th>
                 <th>Titulo</th>
                 <th>E-mail</th>
                 <th>Observações</th>
             </tr>
             {% for c in chamados %}
                 <tr>
+                    <td>{{ c.getNumero() }}</td>
+                    <td>{{ c.getNome() }}</td>
                     <td>{{ c.getTitulo() }}</td>
                     <td>{{ c.getEmail() }}</td>
                     <td>{{ c.getObservacao() }}</td>
                 </tr>
             {% endfor %}
         </table>
+        <div class="navigation text-center">
+            {{ knp_pagination_render(chamados) }}
+        </div>
     </div>
-</div>
+
+ </div>
 {% endblock %}
 
